@@ -2,6 +2,7 @@
 import WebNavbar from "./component/header/Navbar";
 import { BrowserRouter as Router,Route,Routes } from "react-router-dom";
 import Home from "../src/home.js";
+import MyBranch from "./component/mybranch/MyBranch.js";
 
 
 
@@ -24,6 +25,7 @@ function App() {
         <Route exact path="/service/trajection" element={<Openaccount/>}/>
         <Route exact path="/personalbanking" element={<Openaccount/>}/>
         <Route exact path="/shoping" element={<Openaccount/>}/>
+        <Route exact path="/mybranch" element={<MyBranch/>}/>
         
        
       </Routes>

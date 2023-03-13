@@ -13,8 +13,8 @@ export default function WebNavbar(){
     
     
     return (
-      <>
-        <Navbar collapseOnClick expand="lg" bg="primary" variant="white">
+      <div className="text-white">
+        <Navbar collapseOnClick expand="lg" bg="success" variant="white">
       <Container>
         <Navbar.Brand ><img src={logo} alt="log" height="60px" width="60px" className="rounded-circle"></img>
         </Navbar.Brand>
@@ -29,15 +29,19 @@ export default function WebNavbar(){
          
           <Nav className="me-auto">
             
-            <LinkContainer to="home"><Nav.Link >HOME</Nav.Link></LinkContainer>
-            <LinkContainer to="openaccount"><Nav.Link >OPENACCOUNT</Nav.Link></LinkContainer>
-            <NavDropdown title="SERVICE" id="collasible-nav-dropdown" className="dropp">
-            <LinkContainer to="service/deposit"><Nav.Link >DEPOSIT</Nav.Link></LinkContainer>
-            <LinkContainer to="service/loan"><Nav.Link >LOAN</Nav.Link></LinkContainer>
-            <LinkContainer to="service/trajection"><Nav.Link >TRAJECTION</Nav.Link></LinkContainer>
+            <LinkContainer to="home"><Nav.Link className="text-white">HOME</Nav.Link></LinkContainer>
+            <LinkContainer to="openaccount"><Nav.Link className="text-white">OPENACCOUNT</Nav.Link></LinkContainer>
+           {/* dropdown */}
+            <NavDropdown title="SERVICE"  id="collasible-nav-dropdown"  >   
+            <LinkContainer to="service/deposit" ><Nav.Link >DEPOSIT</Nav.Link></LinkContainer>
+            <LinkContainer to="service/loan" ><Nav.Link >LOAN</Nav.Link></LinkContainer>
+            <LinkContainer to="service/trajection" ><Nav.Link >TRAJECTION</Nav.Link></LinkContainer>
             </NavDropdown>
-            <LinkContainer to="/personalbanking"><Nav.Link >PERSONAL BANKING</Nav.Link></LinkContainer>
-            <LinkContainer to="/shoping"><Nav.Link >SHOPING</Nav.Link></LinkContainer>
+
+            <LinkContainer to="/personalbanking"><Nav.Link className="text-white">PERSONAL BANKING</Nav.Link></LinkContainer>
+            <LinkContainer to="/shoping"><Nav.Link className="text-white">SHOPING</Nav.Link></LinkContainer>
+            <LinkContainer to="/mybranch"><Nav.Link className="text-white">MYBRANCH</Nav.Link></LinkContainer>
+
             
           </Nav>
           {/* <Nav>
@@ -49,6 +53,6 @@ export default function WebNavbar(){
         </Navbar.Collapse>
       </Container>
     </Navbar>
-    </>
+    </div>
     );
 }

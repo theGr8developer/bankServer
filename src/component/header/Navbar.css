@@ -1,0 +1,12 @@
+
+.navbar-nav{
+    color: rgb(84, 206, 32) !important;
+}
+
+#collasible-nav-dropdown{
+    color:white;
+}
+
+.bg-button{
+    background-color: success;
+}
