@@ -14,7 +14,7 @@ export default function WebNavbar(){
     
     return (
       <div className="text-white">
-        <Navbar collapseOnClick expand="lg" bg="success" variant="white">
+        <Navbar  expand="lg" bg="success" variant="white">
       <Container>
         <Navbar.Brand ><img src={logo} alt="log" height="60px" width="60px" className="rounded-circle"></img>
         </Navbar.Brand>
